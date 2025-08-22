@@ -1,8 +1,12 @@
 {
-  "name": "frontend",
+  "name": "securepass-password-generator",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "author": "Chamath Dilshan <chamamcolonne@gmail.com>",
+  "license": "UNLICENSED",
+  "description": "Professional Password Generator - Proprietary Software",
+  "copyright": "Copyright (c) 2025 Chamath Dilshan. All rights reserved.",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

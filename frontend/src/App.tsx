@@ -1,3 +1,13 @@
+/*
+ * SecurePass - Professional Password Generator
+ * Copyright (c) 2025 Chamath Dilshan. All rights reserved.
+ *
+ * This software is proprietary and confidential. Unauthorized copying,
+ * modification, distribution, or use is strictly prohibited.
+ *
+ * Contact: chamamcolonne@gmail.com
+ */
+
 import { useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import "./App.css";

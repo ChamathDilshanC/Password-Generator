@@ -1,5 +1,22 @@
+# Robots.txt for SecurePass Password Generator
+# Copyright (c) 2025 Chamath Dilshan. All rights reserved.
+# Unauthorized scraping, copying, or crawling is prohibited.
+
 User-agent: *
+Disallow: /src/
+Disallow: /assets/
+Disallow: /static/
+Disallow: /*.js
+Disallow: /*.css
+Disallow: /*.ts
+Disallow: /*.tsx
+
+# Allow viewing the main page only
 Allow: /
 
-# Sitemap
-Sitemap: https://your-app-url.web.app/sitemap.xml
+# No sitemap provided intentionally
+# Crawl-delay: 10
+
+# Copyright notice
+# This website and its content are proprietary and protected by copyright law.
+# Unauthorized use, copying, or distribution is strictly prohibited.
