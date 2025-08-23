@@ -1,4 +1,7 @@
 import toast from "react-hot-toast";
+import { MagicCard } from "./magicui/magic-card";
+import { RainbowButton } from "./magicui/rainbow-button";
+import { TextAnimate } from "./magicui/text-animate";
 
 interface PasswordGeneratorCardProps {
   length: number;
@@ -54,7 +57,13 @@ const PasswordGeneratorCard = ({
   };
 
   return (
-    <div className="bg-white/95 backdrop-blur-sm shadow-2xl rounded-2xl p-8 w-full max-w-md border border-gray-200">
+    <MagicCard
+      className="bg-white/30 backdrop-blur-lg shadow-2xl rounded-2xl p-8 w-full max-w-md border border-white/30"
+      gradientColor="#3b82f6"
+      gradientOpacity={0.15}
+      gradientFrom="#6366f1"
+      gradientTo="#8b5cf6"
+    >
       <div className="text-center mb-8">
         <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl mb-4">
           <svg
@@ -69,12 +78,21 @@ const PasswordGeneratorCard = ({
             />
           </svg>
         </div>
-        <h2 className="text-2xl font-bold text-gray-800 mb-2">
+        <TextAnimate
+          animation="slideUp"
+          by="word"
+          className="text-2xl font-bold text-gray-800 mb-2"
+        >
           Generate Password
-        </h2>
-        <p className="text-gray-600 text-sm">
+        </TextAnimate>
+        <TextAnimate
+          animation="fadeIn"
+          delay={0.2}
+          by="word"
+          className="text-gray-600 text-sm"
+        >
           Customize your password settings below
-        </p>
+        </TextAnimate>
       </div>
 
       <div className="space-y-6">
@@ -144,9 +162,10 @@ const PasswordGeneratorCard = ({
         </div>
 
         {/* Generate Button */}
-        <button
+        <RainbowButton
           onClick={handleGenerate}
-          className="w-full py-4 px-6 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+          className="w-full py-4 text-lg font-semibold"
+          size="lg"
           disabled={loading}
         >
           {loading ? (
@@ -170,9 +189,9 @@ const PasswordGeneratorCard = ({
               <span>Generating...</span>
             </div>
           ) : (
-            "Generate Password"
+            <>🔐 Generate Password</>
           )}
-        </button>
+        </RainbowButton>
 
         {/* Error Message */}
         {error && (
@@ -247,7 +266,7 @@ const PasswordGeneratorCard = ({
           )}
         </div>
       </div>
-    </div>
+    </MagicCard>
   );
 };
 

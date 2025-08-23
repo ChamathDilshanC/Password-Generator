@@ -1,0 +1,109 @@
+/* Rainbow animation for MagicUI components */
+@keyframes rainbow {
+  0% {
+    --color-1: #ff0080;
+    --color-2: #7928ca;
+    --color-3: #1e40af;
+    --color-4: #0891b2;
+    --color-5: #059669;
+  }
+  20% {
+    --color-1: #7928ca;
+    --color-2: #1e40af;
+    --color-3: #0891b2;
+    --color-4: #059669;
+    --color-5: #ff0080;
+  }
+  40% {
+    --color-1: #1e40af;
+    --color-2: #0891b2;
+    --color-3: #059669;
+    --color-4: #ff0080;
+    --color-5: #7928ca;
+  }
+  60% {
+    --color-1: #0891b2;
+    --color-2: #059669;
+    --color-3: #ff0080;
+    --color-4: #7928ca;
+    --color-5: #1e40af;
+  }
+  80% {
+    --color-1: #059669;
+    --color-2: #ff0080;
+    --color-3: #7928ca;
+    --color-4: #1e40af;
+    --color-5: #0891b2;
+  }
+  100% {
+    --color-1: #ff0080;
+    --color-2: #7928ca;
+    --color-3: #1e40af;
+    --color-4: #0891b2;
+    --color-5: #059669;
+  }
+}
+
+.animate-rainbow {
+  animation: rainbow 3s linear infinite;
+}
+
+/* Blur in up animation */
+@keyframes blurInUp {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0);
+  }
+}
+
+/* Gradient pulse animation */
+@keyframes gradient-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.gradient-pulse {
+  animation: gradient-pulse 2s ease-in-out infinite;
+}
+
+/* Floating animation for cards */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Shimmer effect for loading states */
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200px 100%;
+  animation: shimmer 1.5s infinite;
+}

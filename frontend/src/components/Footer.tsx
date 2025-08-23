@@ -1,14 +1,14 @@
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-white/20 backdrop-blur-md text-gray-800 py-12 border-t border-white/20">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand Section */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            <h3 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
               Password Generator
             </h3>
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-600 text-sm">
               Generate secure passwords with advanced customization options.
               Keep your accounts safe with strong, unique passwords.
             </p>
@@ -16,11 +16,11 @@ const Footer = () => {
 
           {/* Features Section */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-gray-200">Features</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
+            <h4 className="text-lg font-semibold text-gray-700">Features</h4>
+            <ul className="space-y-2 text-sm text-gray-600">
               <li className="flex items-center gap-2">
                 <svg
-                  className="w-4 h-4 text-blue-400"
+                  className="w-4 h-4 text-purple-500"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -62,7 +62,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <svg
-                  className="w-4 h-4 text-blue-400"
+                  className="w-4 h-4 text-purple-500"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -80,10 +80,10 @@ const Footer = () => {
           {/* Contact/Info Section */}
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-gray-200">About</h4>
-            <div className="space-y-2 text-sm text-gray-400">
+            <div className="space-y-2 text-sm text-gray-600">
               <p>Built with modern web technologies</p>
               <p>React + TypeScript + Tailwind CSS</p>
-              <p>Node.js + Express backend</p>
+              <p>Firebase Hosting + MagicUI Components</p>
             </div>
           </div>
         </div>
@@ -91,10 +91,10 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-600">
               © {new Date().getFullYear()} Chamath Dilshan. All rights reserved.
             </p>
-            <div className="flex items-center gap-6 text-sm text-gray-400">
+            <div className="flex items-center gap-6 text-sm text-gray-600">
               <span>Made with ❤️ for security</span>
               <div className="flex items-center gap-2">
                 <svg
