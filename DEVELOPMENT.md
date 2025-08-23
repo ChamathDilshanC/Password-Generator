@@ -7,15 +7,19 @@ This guide explains how to set up sensitive configuration files for development.
 ### Required Setup Files (Copy from examples):
 
 1. **Environment Variables**
+
    ```bash
    cp .env.example .env.local
    ```
+
    Edit `.env.local` with your actual values.
 
 2. **Firebase Service Account** (if using backend features)
+
    ```bash
    cp serviceAccountKey.example.json serviceAccountKey.json
    ```
+
    Replace with your actual Firebase service account key.
 
 3. **Local Configuration** (optional)
@@ -29,22 +33,26 @@ This guide explains how to set up sensitive configuration files for development.
 These files are automatically ignored by Git:
 
 ### Sensitive Files:
+
 - `.env`, `.env.local`, `.env.*.local`
 - `serviceAccountKey.json`
 - `*-key.json`, `*-secret.json`
 - `config.local.*`
 
 ### Build Outputs:
+
 - `dist/`, `build/`, `out/`
 - `node_modules/`
 - `.cache/`
 
 ### IDE/OS Files:
+
 - `.vscode/`, `.idea/`
 - `.DS_Store`, `Thumbs.db`
 - `*.swp`, `*.swo`
 
 ### Temporary Files:
+
 - `*.log`, `*.tmp`
 - `.firebase/`
 - `.rpt2_cache*/`
